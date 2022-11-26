@@ -14,13 +14,11 @@ jobs:
 
 
     steps:
-      - name: 'before'
-        run: ls
-
       - uses: actions/checkout@v3
       
-      - name: 'after'
-        run: ls 
+
+      - name: "login to docker hup"
+        run: docker login --username esraaata --password dckr_pat_vcQdhutk-V3dNw_F_9mBUEzRHLg
 
       
 
